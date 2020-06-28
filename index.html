@@ -1,0 +1,14 @@
+<html>
+<body>
+  <script language="javascript">
+  function checkProvider () {
+    if (typeof window.ethereum !== 'undefined') {
+      console.log('you already have a web3 provider');
+    } else {
+      console.log('please install Metamask');
+    }
+  }
+  var interval = setInterval(checkProvider, 1000);
+  </script>
+</body>
+</html>
